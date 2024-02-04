@@ -26,5 +26,11 @@ pipeline {
                  sh "mvn test"
            }
        }
+                       //stage pour test de sonar
+    stage("Test Application"){
+           steps {
+                 sh "mvn test"
+           }
+    }
   }
 }
